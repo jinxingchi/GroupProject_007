@@ -1,0 +1,55 @@
+/**
+*::-webkit-scrollbar {
+    width: 10px;
+}
+*::-webkit-scrollbar-track {
+    background-color: #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #3c3c3e;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #3c3c3e;
+}
+.projects_hero_sliderprojects_hero_slider, .projects_slider_pic{
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.about_centralarea{
+    -webkit-transform: translateZ(0);   
+}
+*/
+/**
+*::-moz-scrollbar {
+    width: 10px;
+}
+*::-moz-scrollbar-track {
+    background-color: #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+}
+*::-moz-scrollbar-thumb {
+    background-color: #3c3c3e;
+}
+*::-moz-scrollbar-thumb:hover {
+	background-color: #3c3c3e;
+}
+
+*{
+    scrollbar-base-color: #d4d4d4;
+    scrollbar-base-color: #d4d4d4;
+    scrollbar-3dlight-color: #d4d4d4;
+    scrollbar-highlight-color: #d4d4d4;
+    scrollbar-track-color: #3c3c3e;
+    scrollbar-arrow-color: 3c3c3e;
+    scrollbar-shadow-color: #d4d4d4;
+    scrollbar-dark-shadow-color: #d4d4d4;
+
+}
+*/
+.projects_overview_textlink, .projects_overview_textlink:hover {
+    
+     transition: all 150ms ease 0s !important; 
+    -webkit-transition: all 150ms ease 0s !important; 
+    -moz-transition: all 150ms ease 0s !important;  
+    -o-transition: all 150ms ease 0s !important; 
+}
