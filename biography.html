@@ -2,26 +2,31 @@
 <!-- saved from url=(0040)http://www.007.com/characters/the-bonds/ -->
 <html lang="eng">
 <head>
-    	<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="static/js/jquery.min.js"></script>
+	
+
 	<!-- copy from the home page -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
-	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="static/css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" href="static/css/style.css" >
 	<link rel="stylesheet" type="text/css" href="css/tilteffect.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/webflow.css">
     <link rel="stylesheet" type="text/css" href="css/dnlsptzk.webflow.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+
     
     <!-- end of copy links from the home page -->
     <!-- for hovercard effect -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic' rel='stylesheet' type='text/css'>
-<link href="http://webrevisions.com/demo/hovercard/hovercard.css" rel="stylesheet">
-<link rel="canonical" href="http://webrevisions.com/" />
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900,400italic' rel='stylesheet' type='text/css'> -->
+<!-- <link href="http://webrevisions.com/demo/hovercard/hovercard.css" rel="stylesheet"> -->
+<!-- <link rel="canonical" href="http://webrevisions.com/" /> -->
 <!-- /all in one seo pack -->
-<link rel="shortcut icon" href="http://webrevisions.com/wp-content/themes/v2/images/icon.png" />
+<!-- <link rel="shortcut icon" href="http://webrevisions.com/wp-content/themes/v2/images/icon.png" /> -->
 <!-- end of hovercard effect -->
     
 
@@ -33,10 +38,10 @@
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="http://www.007.com/wp-content/themes/007-2014/library/images/win8-tile-icon.png">
 		<link rel="pingback" href="http://www.007.com/xmlrpc.php">
-		<link rel="alternate" type="application/rss+xml" title="James Bond 007 » Feed" href="http://www.007.com/feed/">
-		<link rel="alternate" type="application/rss+xml" title="James Bond 007 » Comments Feed" href="http://www.007.com/comments/feed/">
+		<!-- <link rel="alternate" type="application/rss+xml" title="James Bond 007 » Feed" href="http://www.007.com/feed/"> -->
+		<!-- <link rel="alternate" type="application/rss+xml" title="James Bond 007 » Comments Feed" href="http://www.007.com/comments/feed/"> -->
 		
-		<style type="text/css">
+<style type="text/css">
 img.wp-smiley,
 img.emoji {
 	display: inline !important;
@@ -49,27 +54,44 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+
+.image {
+   position: relative;
+}
+
+
+h2{
+   position: absolute;
+   top: 500px;
+   left: 0px;
+   /*width: 50%;*/
+   margin: 0 auto;
+   /*width: 30px;*/
+   height: 50px;
+   text-align: left;
+   font-family: 'Hvd fonts brandongrotesque', sans-serif;
+   color: #3c3c3e;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 200;
+}
+
+label {
+	width:100px;
+	margin-bottom: 0px;
+	margin-top: 50px;
+}
+.hc-details{
+	height:500px;
+}
+
 </style>
 <link rel="stylesheet" id="swipebox_css-css" href="./The Official James Bond 007 Website _ The Bonds_files/swipebox.css" type="text/css" media="all">
 <link rel="stylesheet" id="bones-stylesheet-css" href="./The Official James Bond 007 Website _ The Bonds_files/style.css" type="text/css" media="all">
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='bones-ie-only-css'  href='http://www.007.com/wp-content/themes/007-2014/library/css/ie.css' type='text/css' media='all' />
-<![endif]-->
+
 <link rel="canonical" href="./The Official James Bond 007 Website _ The Bonds_files/The Official James Bond 007 Website _ The Bonds.html">
 <link rel="shortlink" href="http://www.007.com/?p=3689">
-    <script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		  ga('create', 'UA-26845942-1', 'auto');
-		  ga('send', 'pageview');
-		
-	</script> 
-	<script type="text/javascript">
-			var more_stories_nonce = '5ff1994258';
-	</script>
+    
 	<link rel="stylesheet" type="text/css" href="chrome-extension://cgndfbhngibokieehnjhbjkkhbfmhojo/css/validation.css"></head>
 
 	<!-- start of body -->
@@ -118,33 +140,33 @@ img.emoji {
 <!-- start hover effect -->
 								
 										<div id="timeline" style="opacity: 1; transition: none;">
-											<ul id="characters"> <li class="timeline_item item_0" style="left: -80px; visibility: visible;" data-id="0"><a href="" data-toggle="popover" class="basic-hovercard" data-placement="bottom"><img src="./The Official James Bond 007 Website _ The Bonds_files/craig_standard.png" alt="Daniel Craig" draggable="false"></a>
+											<ul id="characters">
+											<li class="timeline_item item_0" style="left: -80px; visibility: visible;" data-id="0"><img src="./The Official James Bond 007 Website _ The Bonds_files/craig_standard.png" alt="Daniel Craig" draggable="false"><div class="image_text"><h2><label id="demo-basic">Daniel Craig</label></h2></div></li>
+
+											<li class="timeline_item item_1" style="left: 50px; visibility: visible;" data-id="1"><img src="./The Official James Bond 007 Website _ The Bonds_files/brosnan_standard.png" alt="Pierce Brosnan" draggable="false"><div class="image_text"><h2><label id="demo-basic2">Pierce Brosnan</label></h2></div>
 															
 											</li>
-											<li class="timeline_item item_1" style="left: 50px; visibility: visible;" data-id="1"><img src="./The Official James Bond 007 Website _ The Bonds_files/brosnan_standard.png" alt="Pierce Brosnan" draggable="false">
+											 <li class="timeline_item item_2" style="left: 100px; visibility: visible;" data-id="2"><img src="./The Official James Bond 007 Website _ The Bonds_files/dalton_standard.png" alt="Timothy Dalton" draggable="false"><div class="image_text"><h2 style = 'font-size:20px;'><label id="demo-basic3">Timothy Dalton</label></h2></div>
 															
 											</li>
-											 <li class="timeline_item item_2" style="left: 100px; visibility: visible;" data-id="2"><img src="./The Official James Bond 007 Website _ The Bonds_files/dalton_standard.png" alt="Timothy Dalton" draggable="false">
+											<li class="timeline_item item_3" style="left: -50px; visibility: visible;" data-id="3"><img src="./The Official James Bond 007 Website _ The Bonds_files/moore_standard1.png" alt="Roger Moore" draggable="false"><div class="image_text"><h2><label id="demo-basic4">Roger Moore</label></h2></div>
 															
 											</li>
-											<li class="timeline_item item_3" style="left: -50px; visibility: visible;" data-id="3"><img src="./The Official James Bond 007 Website _ The Bonds_files/moore_standard1.png" alt="Roger Moore" draggable="false">
+											<li class="timeline_item item_4" style="left: 300px; visibility: visible;" data-id="4"><img src="./The Official James Bond 007 Website _ The Bonds_files/lazenby_standard.png" alt="George Lazenby" draggable="false"><div class="image_text"><h2><label id="demo-basic5">George Lazenby</label></h2></div>
 															
 											</li>
-											<li class="timeline_item item_4" style="left: 300px; visibility: visible;" data-id="4"><img src="./The Official James Bond 007 Website _ The Bonds_files/lazenby_standard.png" alt="George Lazenby" draggable="false">
-															
-											</li>
-											<li class="timeline_item item_5" style="left: -125px; visibility: visible;" data-id="5"><img src="./The Official James Bond 007 Website _ The Bonds_files/conner_standard.png" alt="Sean Connery" draggable="false">
+											<li class="timeline_item item_5" style="left: -125px; visibility: visible;" data-id="5"><img  src="./The Official James Bond 007 Website _ The Bonds_files/conner_standard.png" alt="Sean Connery" draggable="false"><div class="image_text"><h2><label id="demo-basic6">Sean Connery</label></h2></div>
 															
 											</li>
 											</ul>											
 										</div>							
 									</div>	
-									<div class="nameOverlay" style="left: 193px; top: 80.5156px;">
+									<!-- <div class="nameOverlay" style="left: 193px; top: 80.5156px;">
 										<div class="name">
 											<h1 style="width: 247.2px;">Timothy Dalton</h1>
 										</div>
-									</div>
-											<div id="bioImg_container"></div>
+									</div> -->
+											<!-- <div id="bioImg_container"></div>
 											<div id="character_content">
 												  	<div class="bio-content">
 													  	<div class="col-1"></div>
@@ -153,65 +175,142 @@ img.emoji {
 												  	</div>
 											    	
 											      <div id="close_btn" class="close"><img src="./The Official James Bond 007 Website _ The Bonds_files/btn_close.png" alt="close content"></div>
-											    </div>
-											   <!-- <div id="close_btn_2" class="close"><img src="http://www.007.com/wp-content/themes/007-2014/library/images/btn_close.png" alt="close content" /></div> -->
+											    </div> -->
+											  
 											</section></article></div>						
 										
 					</div> 					
 				</div> 
 			</div> 
-			<!-- start of card content -->
-			<div class="basic-content" style="display: none;">
-		<div class="hover-card-details left-align">
-			<div class="hover-card-header left-align">
-				<div class="hover-card-pic left-align">
-					<span class="basic-image-wrapper medium">
-						<a href="" class="left-align" style="background:url(images/craig_hovercard.jpg)"></a>
-					</span>
-				</div>
-				<h4 class="left-align"><a href="#">Daniel Craig</a></h4>
-					Mark Otto 	
-			</div>
-			
-		</div> 
-		  
-	</div>	
-		</div>	
+<!-- start of card content -->
+<!-- daniel craig -->
+
+<script type="text/javascript">
+$(document).ready(
+    function () {
+    var hoverHTMLDemoBasic = "<p style='text-align:left;clear:top right;'>Daniel Craig, one of British theatre's most famous faces, who waited tables as a struggling teenage actor with the NYT, went on to star as 'James Bond' in Casino Royale (2006), Quantum of Solace (2008), Skyfall (2012) and Spectre (2015). More About <a href = 'https://en.wikipedia.org/wiki/Daniel_Craig'>him.</a></p>";
+
+
+    $("#demo-basic").hovercard({
+        detailsHTML: hoverHTMLDemoBasic,
+        // detailsHTML: 'haha',
+        width: 400,
+        cardImgSrc: 'static/images/craig_hovercard.jpg'
+    });
+}
+);
+// end of daniel craig
+
+// start of Pierce Brosnan
+$(document).ready(
+    function () {
+    var hoverHTMLDemoBasic2 = "<p style='text-align:left;clear:top;'>In 1994, he became the fifth actor to portray secret agent James Bond in the Eon Productions film series, starring in four films from 1995 to 2002 (GoldenEye, Tomorrow Never Dies, The World Is Not Enough and Die Another Day). He lent his likeness for Bond in the video games James Bond 007: Nightfire and James Bond 007: Everything or Nothing, providing his voice too for the latter. More about <a href = 'https://en.wikipedia.org/wiki/Pierce_Brosnan'>him.</a></p>";
+
+    $("#demo-basic2").hovercard({
+        detailsHTML: hoverHTMLDemoBasic2,
+        width: 400,
+        cardImgSrc: 'static/images/brosnan_hovercard.jpg'
+    });
+}
+);
+
+// end of Pierce Brosnan
+
+// start of Timothy Dalton
+$(document).ready(
+    function () {
+    var hoverHTMLDemoBasic3 = "<p style='text-align:left;clear:top; font-size:23px;font family:font-family:Sans-serif !important;line-height:1.5em;'>Welsh actor Timothy Dalton took over the role from Roger Moore in 1987. He appeared in The Living Daylights (1987) and Licence to Kill (1989). Legal issues between the Bond producers and the studio over distribution rights resulted in the cancellation of a proposed third Dalton film scheduled for release in 1991[1] and put the series on a hiatus for several years. More about <a href = 'https://en.wikipedia.org/wiki/Timothy_Dalton'>him.</a></p>";
+    	var DemoFactor3 = 3;
+
+    $("#demo-basic3").hovercard({
+        detailsHTML: hoverHTMLDemoBasic3,
+        factor: DemoFactor3,
+        width: 400,
+        cardImgSrc: 'static/images/dalton_hovercard.jpg'
+    });
+}
+);
+
+// end of Timothy Dalton
+// start of Roger Moore
+$(document).ready(
+    function () {
+    var hoverHTMLDemoBasic4 = "<p style='text-align:left; clear:top;font-size:23px;font family:font-family:Sans-serif !important;line-height:1.5em;'>English actor Roger Moore took over the role from 1973 to 1985. To date he is the longest-serving James Bond actor, spanning twelve years in the role. He is also the oldest actor to play Bond; having begun the role at 45 and retiring from it at the age of 58. He appeared in Live and Let Die (1973), The Man with the Golden Gun (1974), The Spy Who Loved Me (1977), Moonraker (1979), For Your Eyes Only (1981), Octopussy (1983) and A View To A Kill (1985)</p>";
+    	var DemoFactor4 = 4;
+
+    $("#demo-basic4").hovercard({
+        detailsHTML: hoverHTMLDemoBasic4,
+        factor: DemoFactor4,
+        // detailsHTML: 'haha',
+        width: 400,
+        cardImgSrc: 'static/images/moore_hovercard.jpg'
+    });
+}
+);
+
+// end of Roger Moore
+// start of George Lazenby
+$(document).ready(
+    function () {
+    var hoverHTMLDemoBasic5 = "<p style ='text-align:left;clear:top;font-size:30px;font family:font-family:Sans-serif !important;line-height:1.5em;'>George Lazenby's first serious acting role was as James Bond in the film On Her Majesty's Secret Service (1969). Lazenby is the second official actor to portray the British secret agent. It was rumoured that Lazenby had been 'difficult to work with' in this project. More about <a href = 'https://en.wikipedia.org/wiki/George_Lazenby'>him.</a></p>";
+    	var DemoFactor5 = 5;
+
+    $("#demo-basic5").hovercard({
+        detailsHTML: hoverHTMLDemoBasic5,
+        factor: DemoFactor5,
+        // detailsHTML: 'haha',
+        width: 400,
+        cardImgSrc: 'static/images/lazenby_hovercard.jpg',
+        openOnTop:false,
+        autoAdjust:false
+    });
+}
+);
+
+// end of George Lazenby
+// start of Sean Connery
+$(document).ready(
+    function () {
+    var hoverHTMLDemoBasic6 = "<p style ='text-align:left;clear:top left;font-size:30px;font family:font-family:Sans-serif !important;line-height:1.5em;'>He was the first actor to perform the role on the big screen. He appeared in Dr. No (1962), From Russia with Love (1963), Goldfinger (1964), Thunderball (1965), You Only Live Twice (1967) and Diamonds Are Forever (1971).In 1983 he returned to the role for the last time in the unofficial James Bond film, Never Say Never Again. More about <a href = 'https://en.wikipedia.org/wiki/Sean_Connery'>him.</a></p>";
+    var DemoFactor6 = 6;
+
+
+    $("#demo-basic6").hovercard({
+        detailsHTML: hoverHTMLDemoBasic6,
+        factor: DemoFactor6,
+        // detailsHTML: 'haha',
+        width: 450,
+        height: 550,
+        cardImgSrc: 'static/images/connery_hovercard.jpg',
+    });
+}
+);
+
+// end of Sean Connery
+
+</script>
+
+
+
+
+</div>	
 		
 
 	<!--end of hovercard  -->
-		 <script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/jquery.min.js">
-		</script>
+	<script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/jquery.min.js"></script>
 
 
 <!-- js file from the home page -->
-<script src="js/site_dnlsptzk.js"></script>
+	<script src="js/site_dnlsptzk.js"></script>
     <script src="js/custom.js"></script>
     <script type="text/javascript" src="js/custom_webflowneu.js" id="webfloJSRemove"></script>
+	<script src="static/js/jquery.hovercard.js" type="text/javascript"></script> 
 
-    <!--  end of js file on the home page-->
-
-    <!-- start from the hover effect links -->
-    <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/hover_css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/hover_css/style_common.css" />
-        <link rel="stylesheet" type="text/css" href="css/hover_css/style3.css" />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
-		<script type="text/javascript" src="js/hover_js/modernizr.custom.69142.js"></script> 
+	
 		
-				
-		<!-- end of hover effect links -->
 		
-<script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/qppr_frontend_script.js"></script>
-<script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/jquery-migrate-1.2.1.min.js"></script>
-
-<script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/base-ck.js"></script>
-<script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/ServerDate.php"></script>
-<script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/with_small_c-ck.js"></script>
-<script type="text/javascript" src="./The Official James Bond 007 Website _ The Bonds_files/with_character_bio-ck.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="http://webrevisions.com/demo/hovercard/custom_hovercard.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- <script src="http://webrevisions.com/demo/hovercard/custom_hovercard.js"></script> -->
 </body>
 
 
