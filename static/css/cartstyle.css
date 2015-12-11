@@ -49,6 +49,10 @@ body {
 	margin: 0 auto;
 }
 
+.eachitem img {
+	margin-bottom: 10px;
+}
+
 .backshop {
 	display: block;
 	color: #BBBFC4;
