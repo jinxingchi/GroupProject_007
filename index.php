@@ -1,122 +1,53 @@
-<?php
-	session_start();
-	require("includes/connection.php");
-	if(isset($_GET['page'])){
-		
-		$pages=array("products", "cart");
-		
-		if(in_array($_GET['page'], $pages)) {
-			
-			$_page=$_GET['page'];
-			
-		}else{
-			
-			$_page="products";
-			
-		}
-		
-	}else{
-		
-		$_page="products";
-		
-	}
-
-?>
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="./static/images/icons/007-icon.png"/>
-    <link rel="stylesheet" type="text/css" href="./static/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./static/css/007style.css">
-    <script src="./static/js/jquery.min.js"></script>
-    <script src="./static/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="static/css/cartstyle.css">
-	<title>007 Shop</title>
+    <?php
+        include("commonhead.html");
+    ?>
+
+    <link rel="stylesheet" type="text/css" href="./static/css/fakeLoader.css">
+	<title>007</title>
 </head>
 
 <body>
+
+    <div id="fakeLoader"></div>
+    <script src="static/js/fakeLoader.min.js"></script>
+
+    <script type="text/javascript">
+      $("#fakeLoader").fakeLoader({
+        timeToHide: 4500,
+        imagePath:"static/images/loading.gif",
+        bgColor:"#000000"
+      });
+    </script>
+
 <!-- navigation bar -->
-<div class="nav">
 
-    <div class="newsblog_menuitem_wrapper">
-        <div class="newsblog_menuitem_innerwrapper">
-            <a class="newsblog_menuitem" href="index.html">Home</a>
-        </div>
-    </div>
-
-    <div class="contact_menuitem_wrapper">
-        <div class="contact_menuitem_innerwrapper">
-            <a class="contact_menuitem" href="contact.html">Contact</a>
-        </div>
-    </div>
-
-    <div class="projects_menuitem_wrapper">
-        <div class="projects_menuitem_innerwrapper">
-            <a class="projects_menuitem" href="shop.html">Shop</a>
-        </div>
-    </div>
-
-    <div class="about_menuitem_wrapper">
-        <div class="about_menuitem_innerwrapper">
-            <a class="about_menuitem" href="biography.html">Biography</a>
-        </div>
-    </div>
-
-</div>
+<?php
+    include("nav.html");
+?>
 
 <!-- end of navigation bar -->
 
-	
-	<div>
+   <div class="w-section home-page">
+        <div class="home_centralarea" data-ix="home-darkfield" style="opacity: 1; transition: opacity 500ms;">
+            <div class="home_parallaxpic_wrapper">
+                <div class="home_parallaxpic" data-ix="home-parallaxpic" style="opacity: 0.4; transition: opacity 1000ms;">
+                    <div class="tilt">
+                        <div class="tilt__back" style="transform: perspective(1200px) translate3d(-1.85958px, -4.84651px, 0px) rotate3d(1, 0, 0, -4.84651deg) rotate3d(0, 1, 0, -1.85958deg) rotate3d(0, 0, 1, 0deg); background-image: url("static/images/bg_007.jpg");"></div>
+                        <div class="tilt__front" style="opacity: 0.5; transform: perspective(1200px) translate3d(-0.464895px, -1.21163px, 0px) rotate3d(1, 0, 0, -1.21163deg) rotate3d(0, 1, 0, -0.464895deg) rotate3d(0, 0, 1, 0deg); background-image: url("static/images/bg_007.jpg");"></div>
+                        <div class="tilt__front" style="opacity: 0.5; transform: perspective(1200px) translate3d(-0.929791px, -2.42325px, 0px) rotate3d(1, 0, 0, -2.42325deg) rotate3d(0, 1, 0, -0.929791deg) rotate3d(0, 0, 1, 0deg); background-image: url("static/images/bg_007.jpg");"></div>
+                        <div class="tilt__front" style="opacity: 0.5; transform: perspective(1200px) translate3d(-1.39469px, -3.63488px, 0px) rotate3d(1, 0, 0, -3.63488deg) rotate3d(0, 1, 0, -1.39469deg) rotate3d(0, 0, 1, 0deg); background-image: url("static/images/bg_007.jpg");"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="shopcontent">
-			
-			<?php require($_page.".php"); ?>
-
-		</div>
-		
-		<div id="cartsidebar">
-		<div id="sidebarcontent">
-			<?php
-			
-				if(isset($_SESSION['cart'])){
-					
-					$sql="SELECT * FROM products WHERE id_product IN (";
-					
-					foreach($_SESSION['cart'] as $id => $value) {
-						$sql.=$id.",";
-					}
-					
-					$sql=substr($sql, 0, -1).") ORDER BY name ASC";
-					$query=mysql_query($sql);
-					while($row=mysql_fetch_array($query)){
-						
-					?>
-						<p class="sidebarcontent"><?php echo $row['name'] ?> x <?php echo $_SESSION['cart'][$row['id_product']]['quantity'] ?></p>
-					<?php
-						
-					}
-				?>
-					<hr />
-					<a href="index.php?page=cart" class="cartbutton">Go to Cart</a>
-				<?php
-					
-				}else{
-					
-					echo "<p class='sidebarcontent'>Your cart is empty. Please add some products.</p>";
-					
-				}
-			
-			?>
-
-		</div>
-			
-		</div>
-
-	</div>
+<footer>
+</footer>
 
 </body>
-</html>
+</html>	

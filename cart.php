@@ -14,8 +14,8 @@
 
 ?>
 
-<a class="backshop" href="index.php?page=products">Go Back to Shop</a>
-<form method="post" action="index.php?page=cart">
+<a class="backshop" href="shop.php?page=products">Go Back to Shop</a>
+<form method="post" action="shop.php?page=cart">
     
 	<table>
 

@@ -53,7 +53,7 @@
 		                <p class="iteminfo"><?php echo $row['name'] ?></p> 
 		                <p class="iteminfo"><?php echo $row['description'] ?></p> 
 		                <p class="iteminfo">$<?php echo $row['price'] ?></p> 
-		                <p class="iteminfo"><a class="cartbutton" href="index.php?page=products&action=add&id=<?php echo $row['id_product'] ?>">Add to Cart</a></p> 
+		                <p class="iteminfo"><a class="cartbutton" href="shop.php?page=products&action=add&id=<?php echo $row['id_product'] ?>">Add to Cart</a></p> 
 		            </div> 
 				<?php
 						
