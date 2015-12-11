@@ -30,7 +30,7 @@
     ?>
 
     <link rel="stylesheet" type="text/css" href="static/css/cartstyle.css">
-	<title>007 Shop</title>
+	<title>007-Shop</title>
 </head>
 
 <body>
